@@ -31,24 +31,26 @@ class StreamCreate extends Component {
 
   render() {
     return (
-      <form
-        className="ui form error"
-        onSubmit={this.props.handleSubmit(this.onSubmit)}
-      >
-        <Field
-          name="title"
-          component={this.renderInput}
-          label="Enter Title: "
-        />
-        <Field
-          name="description"
-          component={this.renderInput}
-          label="Enter Description: "
-        />
-        <button type="submit" className="ui button primary">
-          Submit
-        </button>
-      </form>
+      <div className="ui container">
+        <form
+          className="ui form error"
+          onSubmit={this.props.handleSubmit(this.onSubmit)}
+        >
+          <Field
+            name="title"
+            component={this.renderInput}
+            label="Enter Title: "
+          />
+          <Field
+            name="description"
+            component={this.renderInput}
+            label="Enter Description: "
+          />
+          <button type="submit" className="ui button primary">
+            Submit
+          </button>
+        </form>
+      </div>
     );
   }
 }
